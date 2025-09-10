@@ -31,7 +31,7 @@ watchEffect(() => {
 
       <!-- Logo & Social -->
       <div class="flex flex-col items-center md:w-1/3">
-        <img src="@/assets/logo/ironcladLogo4.png" alt="ironclad Logo" class="h-40 mb-4"/>
+        <img src="/logo/ironcladLogo4.png" alt="ironclad Logo" class="h-40 mb-4"/>
         <div class="flex space-x-4 mt-6">
           <a href="#" class="text-yellow-500 hover:text-white transition"><Icon icon="mdi:facebook" class="w-6 h-6"/></a>
           <a href="#" class="text-yellow-500 hover:text-white transition"><Icon icon="mdi:instagram" class="w-6 h-6"/></a>

@@ -30,7 +30,8 @@ import scrollTop from '@/components/scroll-top.vue';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import heroImg from '@/assets/images/construction2.png';
+const heroImg = '/images/construction2.png';
+
 
 onMounted(() => {
   Aos.init();

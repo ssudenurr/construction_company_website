@@ -147,7 +147,7 @@ const toggleProjectMobile = () => {
       <!-- Logo -->
       <div class="flex justify-center md:justify-center flex-1">
         <a href="/" aria-label="Home">
-          <img src="@/assets/logo/ironcladLogo4.png" alt="Logo" class="w-40 h-auto md:w-42" />
+          <img src="/logo/ironcladLogo4.png" alt="Logo" class="w-40 h-auto md:w-42" />
         </a>
       </div>
 

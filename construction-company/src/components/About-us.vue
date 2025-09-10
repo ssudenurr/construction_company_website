@@ -9,7 +9,7 @@ const { t } = useI18n();
       <!-- Left side -->
       <div class="relative">
         <img 
-          src="@/assets/images/construction4.png" 
+          src="/images/construction4.png" 
           alt="İnşaatco İnşaat Bina"
           class="rounded-lg shadow-lg"
           data-aos="fade-down-right"

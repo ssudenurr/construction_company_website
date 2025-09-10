@@ -10,7 +10,7 @@
       "area": "85-200 m²",
       "units": 120,
       "floors": 3,
-      "image": "../src/assets/images/residential.jpeg"
+      "image": "/images/residential.jpeg"
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
       "area": "50-250 m²",
       "units": 50,
       "floors": 10,
-      "image": "../src/assets/images/office.jpeg"
+      "image": "/images/office.jpeg"
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
       "area": "75-180 m²",
       "units": 8,
       "floors": 2,
-      "image": "../src/assets/images/restoration.jpeg"
+      "image": "/images/restoration.jpeg"
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@
       "area": "500-2000 m²",
       "units": 20,
       "floors": 2,
-      "image": "../src/assets/images/industrialBuilding.jpeg"
+      "image": "/images/industrialBuilding.jpeg"
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@
       "area": "90-220 m²",
       "units": 80,
       "floors": 4,
-      "image": "../src/assets/images/residential2.png"
+      "image": "/images/residential2.png"
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@
       "area": "60-300 m²",
       "units": 60,
       "floors": 12,
-      "image": "../src/assets/images/office4.png"
+      "image": "/images/office4.png"
     },
     {
       "id": 7,
@@ -82,7 +82,7 @@
       "area": "80-190 m²",
       "units": 10,
       "floors": 2,
-      "image": "../src/assets/images/urbanRenewal.png"
+      "image": "/images/urbanRenewal.png"
     },
     {
       "id": 8,
@@ -94,7 +94,7 @@
       "area": "400-1500 m²",
       "units": 15,
       "floors": 2,
-      "image": "../src/assets/images/industrialBuildings2.png"
+      "image": "/images/industrialBuildings2.png"
     },
     {
       "id": 9,
@@ -106,7 +106,7 @@
       "area": "80-180 m²",
       "units": 30,
       "floors": 3,
-      "image": "../src/assets/images/residential3.png"
+      "image": "/images/residential3.png"
     },
     {
       "id": 10,
@@ -118,7 +118,7 @@
       "area": "90-200 m²",
       "units": 25,
       "floors": 5,
-      "image": "../src/assets/images/villas4.png"
+      "image": "/images/villas4.png"
     }
   ]
 }
