@@ -17,7 +17,7 @@ const routes = [
   },
   {
     path: '/project-detail/:id',
-    name: 'project-details',
+    name: 'project-detail',
     component: ProjectDetail
   }
 ]
