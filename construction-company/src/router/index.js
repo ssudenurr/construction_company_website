@@ -4,22 +4,26 @@ import ProjectsPage from '../views/ProjectsPage.vue'
 import ProjectDetail from '../views/ProjectDetail.vue'
 
 const routes = [
-  { path: '/', name: 'home', component: HomeView },
+  { 
+    path: '/', 
+    name: 'home', 
+    component: HomeView 
+  },
   {
     path: '/projects/:type?',
     name: 'projects',
     component: ProjectsPage,
-    props: route => ({ type: route.params.type || 'all' })
+    props: route => ({ type: route.params.type || 'all' }) // ✅ return düzeltildi
   },
   {
     path: '/project-detail/:id',
-    name:'project-details',
+    name: 'project-details',
     component: ProjectDetail 
   }
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(), // ✅ SPA routing (history mode)
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) return { el: to.hash, behavior: 'smooth' }
