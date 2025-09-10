@@ -6,11 +6,11 @@
       "category": "residential",
       "status": "ongoing",
       "location": "New York, USA",
-      "description": "Skyline Residences is a modern housing project located in New York's prestigious district. It consists of 120 apartments in 3 blocks, ranging from 85-200 m². Each apartment features spacious balconies with panoramic city views. The project offers a swimming pool, fitness center, children's playground, and 24/7 security. Its central location is close to shopping areas and public transportation, making it an ideal opportunity for both living and investment.",
+      "description": "Skyline Residences is a modern housing project located in New York's prestigious district. It consists of 20 apartments in 3 blocks, ranging from 85-200 m². Each apartment features spacious balconies with panoramic city views. The project offers a swimming pool, fitness center, children's playground, and 24/7 security. Its central location is close to shopping areas and public transportation, making it an ideal opportunity for both living and investment.",
       "area": "85-200 m²",
-      "units": 120,
+      "units": 20,
       "floors": 3,
-      "image": "/images/residential.jpeg"
+      "image": "/images/home4.png"
     },
     {
       "id": 2,
