@@ -3,14 +3,18 @@ import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import Projects from '@/FakeData/FakeData.json'
 import HeaderSection from '@/components/Header-section.vue'
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 const { t } = useI18n()
 const route = useRoute()
 const projectId = Number(route.params.id)
-const ProjectsData = ref(Projects.projects || [])
+const projectsData = ref(Projects.projects || [])
 // Filter → sadece only matching IDs
-const filteredProjects = ProjectsData.value.filter(p => p.id === projectId)
+const filteredProjects = computed(() => {
+  if (!projectsData.value) return []
+  return projectsData.value.filter(p => p.id === projectId)
+})
+
 
 </script>
 
