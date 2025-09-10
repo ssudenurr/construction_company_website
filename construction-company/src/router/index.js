@@ -9,7 +9,7 @@ const routes = [
     path: '/projects/:type?',
     name: 'projects',
     component: ProjectsPage,
-    props: route => { ({ type: route.params.type || 'all' }) }
+    props: route => ({ type: route.params.type || 'all' })
   },
   {
     path: '/project-detail/:id',
@@ -19,7 +19,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) return { el: to.hash, behavior: 'smooth' }
