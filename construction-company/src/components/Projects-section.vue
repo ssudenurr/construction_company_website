@@ -12,10 +12,7 @@ const slider = ref(null)
 const sliderContainer = ref(null)
 const visibleCards = ref(2) 
 const cardPercent = ref(100 / visibleCards.value)
-const totalPages = computed(() => Math.max(1, projects.value.length - visibleCards.value + 1))
-
-// overlay state 
-const activeOverlay = ref(null)
+const totalPages = computed(() => projects.value.length - visibleCards.value + 1)
 
 // Responsive logic
 function updateVisibleCards() {
@@ -27,12 +24,10 @@ function updateVisibleCards() {
 onMounted(() => {
   updateVisibleCards()
   window.addEventListener('resize', updateVisibleCards)
-  document.addEventListener('click', handleDocClick)
 })
 
 onBeforeUnmount(() => {
   window.removeEventListener('resize', updateVisibleCards)
-  document.removeEventListener('click', handleDocClick)
 })
 
 // Jump to specific slide when dot is clicked
@@ -51,7 +46,7 @@ function getEventX(event) {
 function startDrag(event) {
   isDragging = true
   startX = getEventX(event)
-  if (sliderContainer.value) sliderContainer.value.classList.add('cursor-grabbing')
+  sliderContainer.value.classList.add('cursor-grabbing')
 }
 
 function onDrag(event) {
@@ -68,30 +63,10 @@ function onDrag(event) {
 
 function endDrag() {
   isDragging = false
-  if (sliderContainer.value) sliderContainer.value.classList.remove('cursor-grabbing')
+  sliderContainer.value.classList.remove('cursor-grabbing')
 }
 
-// Overlay toggle: only toggle via click on mobile & tablet (width < 1024)
-// Desktop (>=1024) will rely on CSS hover (group-hover)
-function toggleOverlay(id) {
-  const w = window.innerWidth
-  const tabletBreakpoint = 1024 // <= this value => treat as mobile/tablet for clicks
-  if (w <= tabletBreakpoint) {
-    activeOverlay.value = activeOverlay.value === id ? null : id
-  }
-}
 
-// Close overlay when clicking outside slider (mobile/tablet)
-function handleDocClick(e) {
-  const w = window.innerWidth
-  const tabletBreakpoint = 1024
-  if (w > tabletBreakpoint) return // only close on mobile/tablet
-  const container = sliderContainer.value
-  if (!container) return
-  if (!container.contains(e.target)) {
-    activeOverlay.value = null
-  }
-}
 </script>
 
 <template>
@@ -127,7 +102,8 @@ function handleDocClick(e) {
             class="flex-shrink-0"
             :style="{ width: `${cardPercent}%`, padding: '0.75rem' }">
             
-            <div class="bg-white rounded-3xl shadow-lg overflow-hidden relative group/card">
+            <div
+              class="bg-white rounded-3xl shadow-lg overflow-hidden relative group/card">
               
               <!-- Project image -->
               <img
@@ -137,12 +113,10 @@ function handleDocClick(e) {
                 @click.stop="toggleOverlay(project.id)" 
               />
 
-              <!-- Overlay: visible on hover (desktop) OR when activeOverlay === id (mobile/tablet click) -->
+              <!-- Overlay -->
               <div
-                class="absolute inset-0 bg-gradient-to-t from-yellow-500/50 to-transparent 
-                      transition-opacity duration-500 flex flex-col justify-center items-center p-5 text-center
-                      opacity-0 group-hover/card:opacity-100 pointer-events-none"
-                :class="{ 'opacity-100 pointer-events-auto': activeOverlay === project.id }">
+                class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent 
+                      transition-opacity duration-500 flex flex-col justify-center items-center p-5 text-center">
                 <h3 class="font-extrabold text-3xl md:text-5xl mb-2 text-white">{{ project.title }}</h3>
                 <router-link
                   :to="`/project-detail/${project.id}`"
