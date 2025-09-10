@@ -26,7 +26,7 @@ watchEffect(() => {
 
 <template>
   <!-- FOOTER -->
-  <footer class="bg-gray-900 text-gray-300 py-16">
+  <footer class="bg-gray-900 text-gray-300 py-4">
     <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center md:items-center gap-12">
 
       <!-- Logo & Social -->

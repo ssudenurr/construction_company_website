@@ -107,5 +107,11 @@
         "units": "Units",
         "floors": "Floors",
         "notFound": "Project not found."
+    },
+    "notFound": {
+    "title": "Page Not Found",
+    "subtitle": "404",
+    "message": "Sorry, the page you are looking for does not exist or has been moved.",
+    "button": "Go Back to Home"
     }
 }
