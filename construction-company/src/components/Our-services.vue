@@ -48,12 +48,12 @@ onBeforeUnmount(() => {
         {{ t('services.subtitle') }}
       </p>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 ">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10" >
         <div
           v-for="(service, idx) in services"
           :key="idx"
           class="relative rounded-3xl overflow-hidden group hover:scale-103 transform transition duration-1000 
-          shadow-2xl bg-gray-900/60 border border-gray-700 backdrop-blur-sm"
+          shadow-2xl bg-gray-900/60 border border-gray-700 backdrop-blur-sm" 
           data-aos="zoom-in-up"
           :data-aos-delay="idx * 200">
           <!-- Slider -->

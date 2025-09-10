@@ -71,7 +71,7 @@ function endDrag() {
 
 <template>
   <section id="projects" class="py-18">
-    <div class="max-w-8xl mx-auto px-6">
+    <div class="max-w-8xl mx-auto px-6" data-aos="fade-up-left" data-aos-duration="1000">
       <!-- Section title -->
       <h2 class="text-3xl md:text-4xl uppercase font-extrabold text-center mb-12 text-gray-900">
         {{ t('projects.completedProjects') }}

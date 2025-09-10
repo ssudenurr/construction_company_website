@@ -20,11 +20,11 @@ const filteredProjects = computed(() => {
   return projectsData.value.filter(p => p.status === props.type)
 });
 function statusStyle(status) {
-switch ((status || '').toLowerCase()) {
-case 'ongoing': return 'bg-gray-100 text-indigo-700'
-case 'new': return 'bg-gray-100 text-yellow-700'
-case 'completed': return 'bg-gray-100 text-green-700'
-default: return 'bg-gray-50 text-gray-700'
+  switch ((status || '').toLowerCase()) {
+  case 'ongoing': return 'bg-gray-100 text-indigo-700'
+  case 'new': return 'bg-gray-100 text-yellow-700'
+  case 'completed': return 'bg-gray-100 text-green-700'
+  default: return 'bg-gray-50 text-gray-700'
 }
 }
 </script>
@@ -38,7 +38,7 @@ default: return 'bg-gray-50 text-gray-700'
           :key="project.id"
           class="group relative rounded-2xl overflow-hidden shadow-2xl transform transition duration-700 hover:scale-[1.02] 
           hover:shadow-[0_30px_80px_rgba(2,6,23,0.7)] bg-slate-50"
-          aria-labelledby="`project-${project.id}-title`"
+          aria-labelledby="`project-${project.id}-title`" data-aos="fade-up" data-aos-delay="150"
         >
           <!-- Image / Visual -->
           <div class="relative w-full aspect-[4/4] bg-gray-100">

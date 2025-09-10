@@ -5,7 +5,11 @@ import { useI18n } from 'vue-i18n'
 import Projects from '@/FakeData/FakeData.json'
 import HeaderSection from '@/components/Header-section.vue'
 import FooterSection from '@/components/Footer-section.vue'
+import Aos from 'aos'
 
+onMounted(() => {
+  Aos.init({ duration: 1000, once: true, easing: "ease-in-out" })
+})
 const { t } = useI18n()
 const route = useRoute()
 
@@ -46,8 +50,8 @@ function statusStyle(status) {
         <div v-if="project" class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
           
           <!-- main content -->
-          <main class="lg:col-span-8 space-y-6">
-            <div class="rounded-2xl overflow-hidden shadow-lg">
+          <main class="lg:col-span-8 space-y-6" >
+            <div class="rounded-2xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="150">
               <div class="relative">
                 <img 
                   :src="activeImage || project.image" 
@@ -72,7 +76,7 @@ function statusStyle(status) {
             </div>
 
             <!-- project info -->
-            <div class="w-full bg-white border rounded-2xl p-4 sm:p-6 text-gray-700 shadow-lg">
+            <div class="w-full bg-white border rounded-2xl p-4 sm:p-6 text-gray-700 shadow-lg" data-aos="fade-up-right" data-aos-delay="150">
               <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                 
                 <!-- Status -->
@@ -107,7 +111,7 @@ function statusStyle(status) {
           </main>
 
           <!-- aside -->
-          <aside class="lg:col-span-4">
+          <aside class="lg:col-span-4" data-aos="fade-left" data-aos-delay="150">
             <div class="sticky top-24 space-y-6">
               <article class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
                 <h2 class="text-xl md:text-2xl font-bold text-gray-900">{{ project.title }}</h2>
