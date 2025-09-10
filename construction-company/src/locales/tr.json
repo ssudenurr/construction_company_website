@@ -1,0 +1,96 @@
+{
+  "header": {
+    "home": "Ana Sayfa",
+    "aboutUs": "HAKKIMIZDA",
+    "services": "HİZMETLERİMİZ",
+    "projects": "PROJELER",
+    "contact": "İLETİŞİM",
+    "completedProjects": "Tamamlanan Projeler",
+    "ongoingProjects": "Devam Eden Projeler",
+    "allProjects": "Tüm Projeler",
+    "newProjects": "Yeni Projeler"
+  },
+  "hero": {
+    "modernProjects": "Modern projeler",
+    "strongStructures": "Güçlü yapılar",
+    "getQuote": "Teklif Al",
+    "freeDiscoveryRequest": "Ücretsiz Keşif Talebi"
+  },
+  "aboutUs": {
+    "title": "Geleceği İnşa Ediyoruz",
+    "construction": "İnşaat",
+    "paragraph1": "30 yılı aşkın tecrübemizle her projeyi yalnızca bir yapı değil, bir yaşam alanı olarak tasarlıyoruz. <span class='font-bold'>Modern, güvenli ve estetik binalar</span> müşterilerimize uzun vadeli değer sunar.",
+    "paragraph2": "Sürdürülebilirlik, yenilikçilik ve kaliteyi bir araya getirerek şehirlere değer katan projeler geliştiriyoruz. Her detayda <span class='font-bold'>konfor, güvenlik ve estetik</span> önceliğimizdir.",
+    "paragraph3": "Müşteri memnuniyeti başarımızın en önemli göstergesidir. <span class='font-bold'>Ironclad İnşaat</span> ile hayalinizdeki yaşam alanlarını gerçeğe dönüştürün.",
+    "yearsOfExperience": "Yıllık Deneyim"
+  },
+  "services": {
+    "residential": {
+      "title": "Konut",
+      "text": "Modern ve dayanıklı konut projeleriyle yaşam alanları tasarlıyoruz."
+    },
+    "office": {
+      "title": "Ofis",
+      "text": "Kurumsal iş merkezleri için profesyonel çözümler sunuyoruz."
+    },
+    "urbanRenewal": {
+      "title": "Kentsel Dönüşüm",
+      "text": "Tarihi ve kültürel yapıları koruyarak modern yaşam alanları sunuyoruz."
+    },
+    "architecturalDesign": {
+      "title": "Mimari Tasarım",
+      "text": "Yaratıcı ve modern mimari tasarım çözümleri."
+    },
+    "industrialBuildings": {
+      "title": "Endüstriyel Binalar",
+      "text": "Fonksiyonel ve modern endüstriyel bina projeleri oluşturuyoruz."
+    },
+    "subtitle" : "Her projede modern, güvenli ve estetik çözümler üretiyoruz."
+  },
+  "projects": {
+    "completedProjects": "Tamamlanan Projeler",
+    "viewDetails": "Detayları Göster",
+    "residential": {
+      "title": "Modern Rezidans",
+      "desc": "Şehir merkezinde modern bir konut projesi."
+    },
+    "businessCenter": {
+      "title": "İş Merkezi",
+      "desc": "Modern ofis alanları ve prestijli iş merkezleri."
+    },
+    "villas": {
+      "title": "Villa Projesi",
+      "desc": "Doğa ile iç içe modern villa tasarımları."
+    },
+    "industrialBuilding": {
+      "title": "Endüstriyel Bina",
+      "desc": "Fonksiyonel ve modern endüstriyel bina projeleri."
+    },
+    "architecturalDesign": {
+      "title": "Mimari Tasarım",
+      "desc": "Yaratıcı ve modern mimari tasarım çözümleri."
+    }
+  },
+  "references": {
+    "ourReferences": "Referanslarımız"
+  },
+  "cta": {
+    "title": "<span class='text-5xl font-bold'>Güvenle Yükselen Projeler</span><br /><br />Yılların deneyimi, güçlü ekibimiz ve yenilikçi yaklaşımımızla <span class='font-semibold'>hayallerinizi kalıcı yapılara dönüştürüyoruz.</span><br />Her projede sadece binalar değil, <span class='italic'>mutlu yaşam alanları</span> inşa ediyoruz. Bizim için başarı, rakamlarla değil <span class='underline'>sizin güveniniz ve memnuniyetinizle</span> ölçülür."
+  },
+  "ctaCounters": {
+    "projects": "PROJE",
+    "area": "M2 YAŞAM ALANI",
+    "families": "MUTLU AİLE"
+  },
+  "contact": {
+    "contactUs": "Bİze Ulaşın",
+    "namePlaceholder": "Adınız",
+    "emailPlaceholder": "E-posta",
+    "messagePlaceholder": "Mesajınız",
+    "sendMessage": "Mesaj Gönder"
+  },
+  "footer": {
+    "contact": "İLETİŞİM",
+    "rightsReserved": "Tüm hakları saklıdır."
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "header": {
+    "home": "Startseite",
+    "aboutUs": "Über uns",
+    "services": "Unsere Leistungen",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "references": "Referenzen",
+    "completedProjects": "Abgeschlossene Projekte",
+    "ongoingProjects": "Laufende Projekte",
+    "allProjects": "Alle Projekte",
+    "newProjects": "Neue Projekte"
+  },
+  "hero": {
+    "modernProjects": "Moderne Projekte",
+    "strongStructures": "Stabile Strukturen",
+    "getQuote": "Angebot anfordern",
+    "freeDiscoveryRequest": "Kostenlose Entdeckungsanfrage"
+  },
+  "aboutUs": {
+    "title": "Wir bauen die Zukunft",
+    "construction": "Bau",
+    "paragraph1": "Mit über 30 Jahren Erfahrung entwerfen wir jedes Projekt nicht nur als Bauwerk, sondern als Lebensraum. <span class='font-bold'>Moderne, sichere und ästhetische Gebäude</span> schaffen langfristigen Wert für unsere Kunden.",
+    "paragraph2": "Durch die Kombination von Nachhaltigkeit, Innovation und Qualität entwickeln wir Projekte, die den Städten einen Mehrwert verleihen. In jedem Detail sind <span class='font-bold'>Komfort, Sicherheit und Ästhetik</span> unsere Prioritäten.",
+    "paragraph3": "Die Kundenzufriedenheit ist der wichtigste Indikator für unseren Erfolg. Mit <span class='font-bold'>Ironclad Bau</span> verwirklichen wir Ihre Traumwohnräume.",
+    "yearsOfExperience": "Jahre Erfahrung"
+  },
+  "services": {
+    "residential": {
+      "title": "Wohnung",
+      "text": "Wir gestalten Lebensräume mit modernen und langlebigen Wohnprojekten."
+    },
+    "office": {
+      "title": "Büro & Gewerbe",
+      "text": "Wir bieten professionelle Lösungen für Geschäftszentren und Gewerbeflächen."
+    },
+    "urbanRenewal": {
+      "title": "Städtische Umgestaltung",
+      "text": "Wir schaffen moderne Lebensräume und bewahren dabei historische und kulturelle Gebäude."
+    },
+    "architecturalDesign": {
+      "title": "Architekturdesign",
+      "text": "Kreative und moderne architektonische Designlösungen.."
+    }
+  },
+  "projects": {
+    "completedProjects": "Abgeschlossene Projekte",
+    "viewDetails": "Details anzeigen",
+    "residential": {
+      "title": "Moderne Residenz",
+      "desc": "Ein modernes Wohnprojekt im Stadtzentrum."
+    },
+    "businessCenter": {
+      "title": "Geschäftszentrum",
+      "desc": "Wir bieten professionelle Lösungen für Unternehmenszentren."
+    },
+    "villas": {
+      "title": "Villaprojekt",
+      "desc": "Moderne Villenentwürfe in Einklang mit der Natur."
+    },
+    "industrialBuilding": {
+      "title": "Industriegebäude",
+      "desc": "Funktionale und moderne Industriegebäudeprojekte."
+    },
+    "architecturalDesign": {
+      "title": "Architekturdesign",
+      "desc": "Kreative und moderne Architekturdesign-Lösungen."
+    },
+    "industrialBuildings": {
+      "title": "Industriegebäude",
+      "desc": "Wir erstellen funktionale und moderne Industriegebäudeprojekte."
+    },
+    "subtitle" : "Wir entwickeln für jedes Projekt moderne, sichere und ästhetische Lösungen."
+  },
+  "references": {
+    "ourReferences": "Unsere Referenzen"
+  },
+  "cta": {
+    "title": "<span class='text-5xl font-bold'>Projekte, die mit Vertrauen entstehen</span><br /><br />Mit jahrelanger Erfahrung, unserem starken Team und einem innovativen Ansatz <span class='font-semibold'>verwirklichen wir Ihre Träume in dauerhafte Bauwerke.</span><br />In jedem Projekt bauen wir nicht nur Gebäude, sondern <span class='italic'>lebenswerte Räume</span>. Für uns wird Erfolg nicht an Zahlen gemessen, sondern an <span class='underline'>Ihrem Vertrauen und Ihrer Zufriedenheit.</span>"
+  },
+  "ctaCounters": {
+    "projects": "PROJEKTE",
+    "area": "M2 WOHNFLÄCHE",
+    "families": "GLÜCKLICHE FAMILIEN"
+  },
+  "contact": {
+    "contactUs": "Kontaktieren Sie uns",
+    "namePlaceholder": "Ihr Name",
+    "emailPlaceholder": "E-Mail",
+    "messagePlaceholder": "Ihre Nachricht",
+    "sendMessage": "Nachricht senden"
+  },
+  "footer": {
+    "about": "Über uns",
+    "services": "Leistungen",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "followUs": "Folgen Sie uns",
+    "rightsReserved": "Alle Rechte vorbehalten."
+  }
+}

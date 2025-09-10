@@ -1,0 +1,124 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Skyline Residences",
+      "category": "residential",
+      "status": "ongoing",
+      "location": "New York, USA",
+      "description": "Skyline Residences is a modern housing project located in New York's prestigious district. It consists of 120 apartments in 3 blocks, ranging from 85-200 m². Each apartment features spacious balconies with panoramic city views. The project offers a swimming pool, fitness center, children's playground, and 24/7 security. Its central location is close to shopping areas and public transportation, making it an ideal opportunity for both living and investment.",
+      "area": "85-200 m²",
+      "units": 120,
+      "floors": 3,
+      "image": "../src/assets/images/residential.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "Nova Tower",
+      "category": "office",
+      "status": "completed",
+      "location": "London, UK",
+      "description": "Nova Tower is a modern office building that brings prestige to London’s business district. It has 10 floors and 50 office units, offering an ideal workspace. Each office has high ceilings, natural light, and ergonomic design. Meeting rooms, a cafeteria, and shared workspaces are available. Within walking distance to the metro, it provides convenience for employees and clients. Investors benefit from high rental returns and value appreciation potential.",
+      "area": "50-250 m²",
+      "units": 50,
+      "floors": 10,
+      "image": "../src/assets/images/office.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "Heritage Heights",
+      "category": "urbanRenewal",
+      "status": "new",
+      "location": "Paris, France",
+      "description": "Heritage Heights is a unique project blending historical architecture with modern residential units. The restored building includes 8 apartments and 3 commercial units, featuring elegant design and high-quality materials. Apartments range from 75-180 m² and benefit from large terraces with sunlight throughout the day. Surrounded by walking paths and green areas, it offers a peaceful living experience combined with modern comfort.",
+      "area": "75-180 m²",
+      "units": 8,
+      "floors": 2,
+      "image": "../src/assets/images/restoration.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "Industrial Hub",
+      "category": "industrialBuildings",
+      "status": "completed",
+      "location": "Berlin, Germany",
+      "description": "Industrial Hub is designed as a high-durability, efficiency-focused industrial facility. It includes 20 production areas and office units. With modern infrastructure, energy efficiency, and logistical conveniences, it serves as an ideal center for industry. It provides operational efficiency and high production capacity for businesses.",
+      "area": "500-2000 m²",
+      "units": 20,
+      "floors": 2,
+      "image": "../src/assets/images/industrialBuilding.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "Oceanview Residences",
+      "category": "residential",
+      "status": "ongoing",
+      "location": "Miami, USA",
+      "description": "Oceanview Residences is a luxury seaside housing project in Miami. It consists of 80 apartments across 4 blocks, ranging from 90-220 m², with spacious balconies and terraces. The project offers a swimming pool, gym, walking paths, children's playground, and 24/7 security, ensuring a modern and safe living environment. Its proximity to the beach and shopping centers makes it an excellent choice for a vacation home or investment.",
+      "area": "90-220 m²",
+      "units": 80,
+      "floors": 4,
+      "image": "../src/assets/images/residential2.png"
+    },
+    {
+      "id": 6,
+      "title": "Tech Tower",
+      "category": "office",
+      "status": "completed",
+      "location": "San Francisco, USA",
+      "description": "Tech Tower is a modern high-tech office building located in San Francisco’s business center. With 12 floors and 60 office units plus shared spaces, it is ideal for start-ups and technology companies. Each office is designed to receive natural daylight and allows flexible usage. Its location provides convenience for employees and clients, and it offers high return potential for investors.",
+      "area": "60-300 m²",
+      "units": 60,
+      "floors": 12,
+      "image": "../src/assets/images/office4.png"
+    },
+    {
+      "id": 7,
+      "title": "Old Town Revamp",
+      "category": "urbanRenewal",
+      "status": "completed",
+      "location": "Rome, Italy",
+      "description": "Old Town Revamp transforms the historic old town into modern living spaces. Restored with 10 apartments and 2 commercial units, it balances historical preservation with modern comfort. Apartments range from 80-190 m², and the project features walking paths, social spaces, and green landscaping, offering both peaceful living and cultural value.",
+      "area": "80-190 m²",
+      "units": 10,
+      "floors": 2,
+      "image": "../src/assets/images/urbanRenewal.png"
+    },
+    {
+      "id": 8,
+      "title": "Greenfield Industrial Park",
+      "category": "industrialBuildings",
+      "status": "new",
+      "location": "Toronto, Canada",
+      "description": "Greenfield Industrial Park is a modern industrial facility designed for sustainable energy solutions and efficient production lines. It includes 15 production areas and office units. With energy-saving infrastructure, logistical conveniences, and modern design, it offers optimum efficiency for businesses.",
+      "area": "400-1500 m²",
+      "units": 15,
+      "floors": 2,
+      "image": "../src/assets/images/industrialBuildings2.png"
+    },
+    {
+      "id": 9,
+      "title": "River Residences",
+      "category": "residential",
+      "status": "new",
+      "location": "London, UK",
+      "description": "River Residences is a modern luxury housing project located along the river. It consists of 30 apartments and 3 blocks, with apartment sizes ranging from 80-180 m². Each unit has spacious balconies and terraces. The project offers a swimming pool, sports areas, and green landscaping, providing both a peaceful living environment and investment potential.",
+      "area": "80-180 m²",
+      "units": 30,
+      "floors": 3,
+      "image": "../src/assets/images/residential3.png"
+    },
+    {
+      "id": 10,
+      "title": "Corporate Heights",
+      "category": "residential",
+      "status": "completed",
+      "location": "Dubai, UAE",
+      "description": "Corporate Heights is a prestigious office and residential project in central Dubai. It includes 25 apartments and 5 commercial units, combining modern design, security, and social amenities. Apartments range from 90-200 m², with high ceilings and spacious balconies, offering comfortable living and ideal investment opportunities.",
+      "area": "90-200 m²",
+      "units": 25,
+      "floors": 5,
+      "image": "../src/assets/images/villas4.png"
+    }
+  ]
+}

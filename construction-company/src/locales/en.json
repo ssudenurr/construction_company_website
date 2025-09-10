@@ -1,0 +1,111 @@
+{
+    "header": {
+        "home": "Home",
+        "aboutUs": "About Us",
+        "services": "Our Services",
+        "projects": "Projects",
+        "contact": "Contact",
+        "references": "References",
+        "completedProjects": "Completed Projects",
+        "ongoingProjects": "Ongoing Projects",
+        "allProjects": "All Projects",
+        "newProjects": "New Projects"
+    },
+    "hero": {
+        "modernProjects": "Modern projects",
+        "strongStructures": "Strong structures",
+        "getQuote": "Get a Quote",
+        "freeDiscoveryRequest": "Free Discovery Request"
+    },
+    "aboutUs": {
+        "title": "We Are Building the Future",
+        "construction" : "Construction",
+        "paragraph1": "With over 30 years of experience, we design every project not just as a structure, but as a living space. <span class='font-bold'>Modern, safe, and aesthetic buildings</span> provide long-term value to our clients.",
+        "paragraph2": "By combining sustainability, innovation, and quality, we develop projects that add value to the fabric of cities. In every detail, <span class='font-bold'>comfort, safety, and aesthetics</span> are our priorities.",
+        "paragraph3": "Customer satisfaction is the most important indicator of our success. With <span class='font-bold'>Ironclad Construction</span>, turn your dream living spaces into reality.",
+        "yearsOfExperience" : "Years of Experience"
+    },
+    "services": {
+        "residential": {
+        "title": "Residential",
+        "text": "We design living spaces with modern and durable residential projects."
+        },
+        "office": {
+        "title": "Office",
+        "text": "We provide professional solutions for corporate business centers and commercial areas."
+        },
+        "urbanRenewal": {
+        "title": "Urban Renewal",
+        "text": "We offer modern living spaces while preserving historical and cultural buildings."
+        },
+        "architecturalDesign": {
+        "title": "Architectural Design",
+        "text": "Creative and modern architectural design solutions."
+        },
+        "industrialBuildings": {
+        "title": "Industrial Buildings",
+        "text": "We create functional and modern industrial building projects."
+        },
+        "subtitle" : "We deliver modern, safe, and aesthetically pleasing solutions for every project."
+        
+        
+    },
+    "projects": {
+        "completedProjects": "Completed Projects",
+        "viewDetails": "View Details",
+        "residential": {
+        "title": "Modern Residence",
+        "desc": "A modern residential project in the city center."
+        },
+        "businessCenter": {
+        "title": "Business Center",
+        "desc": "Modern office spaces and prestigious business centers."
+        },
+        "villas": {
+        "title": "Villa Project",
+        "desc": "Modern villa designs integrated with nature."
+        },
+        "industrialBuilding": {
+        "title": "Industrial Building",
+        "desc": "Functional and modern industrial building projects."
+        },
+        "architecturalDesign": {
+        "title": "Architectural Design",
+        "desc": "Creative and modern architectural design solutions."
+        }
+    },
+    "references": {
+        "ourReferences": "Our References"
+    },
+    "cta": {
+        "title": "<span class='text-5xl font-bold'>Projects Rising with Confidence</span><br /><br />With years of experience, our strong team, and an innovative approach, <span class='font-semibold'>we turn your dreams into lasting structures.</span><br />In each project, we build not just buildings but <span class='italic'>happy living spaces</span>. For us, success is measured not by numbers but by <span class='underline'>your trust and satisfaction.</span>"
+    },
+    "ctaCounters": {
+        "projects": "PROJECTS",
+        "area": "M2 LIVING SPACE",
+        "families": "HAPPY FAMILIES"
+    },
+    "contact" :{
+        "contactUs": "Contact Us",
+        "namePlaceholder": "Your Name",
+        "emailPlaceholder": "Email",
+        "messagePlaceholder": "Your Message",
+        "sendMessage": "Send Message"
+    },
+    "footer": {
+        "about": "About",
+        "services": "Services",
+        "projects": "Projects",
+        "contact": "Contact",
+        "followUs": "Follow Us",
+        "rightsReserved": "All rights reserved."
+    },  
+    "project": {
+        "imageAlt": "{{title}} Image",
+        "status": "Status",
+        "area": "Area",
+        "units": "Units",
+        "floors": "Floors",
+        "notFound": "Project not found."
+    }
+}
