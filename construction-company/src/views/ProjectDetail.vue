@@ -13,7 +13,7 @@ const projectsData = ref(Projects.projects || [])
 const filteredProjects = computed(() => {
   if (!projectsData.value) return []
   return projectsData.value.filter(p => p.id === projectId)
-})
+});
 
 
 </script>
