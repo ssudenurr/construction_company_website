@@ -26,10 +26,16 @@ const thumbs = ref([])
 
 onMounted(() => {
   if (project.value) {
-    thumbs.value = (project.value.gallery && project.value.gallery.length) ? project.value.gallery : [project.value.image]
-    activeImage.value = thumbs.value[0] || project.value.image || ''
+    // image hem string hem array olabilir → normalize et
+    const images = Array.isArray(project.value.image)
+      ? project.value.image
+      : [project.value.image]
+
+    thumbs.value = images
+    activeImage.value = images[0] || ''
   }
 })
+
 // styling helper for status
 function statusStyle(status) {
   switch ((status || '').toLowerCase()) {
@@ -46,22 +52,22 @@ function statusStyle(status) {
     <div class="bg-white min-h-screen text-gray-800">
       <HeaderSection class="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 w-full" />
 
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-24 py-8 md:py-12">
+      <div class="max-w-8xl mx-auto px-4 sm:px-6 md:px-12 lg:px-24 py-8 md:py-12">
         <div v-if="project" class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
           
           <!-- main content -->
           <main class="lg:col-span-8 space-y-6" >
             <div class="rounded-2xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="150">
-              <div class="relative">
-                <img 
-                  :src="activeImage || project.image" 
-                  :alt="project.title" 
-                  class="w-full aspect-[16/9] md:aspect-[21/9] object-cover"
+              <div class="aspect-[4/3] sm:aspect-[16/9] lg:aspect-[16/10] w-full">
+                <img
+                  :src="activeImage || project.image || '/placeholder.jpg'"
+                  :alt="project.title || 'Project image'"
+                  loading="lazy"
+                  class="w-full h-full object-cover rounded-t-2xl"
                 />
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/25 pointer-events-none"></div>
               </div>
 
-              <!-- thumbnails -->
+              <!-- thumbnails --> 
               <div class="p-3 sm:p-4 bg-white flex gap-3 overflow-x-auto">
                 <button
                   v-for="(img, idx) in thumbs"
@@ -75,51 +81,56 @@ function statusStyle(status) {
               </div>
             </div>
 
-            <!-- project info -->
-            <div class="w-full bg-white border rounded-2xl p-4 sm:p-6 text-gray-700 shadow-lg" data-aos="fade-up-right" data-aos-delay="150">
-              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                
-                <!-- Status -->
-                <div class="flex items-center gap-3">
-                  <div class="text-sm text-gray-500">{{ t('project.status','Status') }}</div>
-                  <div
-                    :class="`inline-flex items-center gap-2 px-3 py-1.5 text-sm rounded-full border font-medium ${statusStyle(project.status)}`"
-                    :aria-label="`Project status: ${project.status}`"
-                    role="status">
-                    <span>{{ project.status }}</span>
-                  </div>
-                </div>
-
-                <!-- Project metrics -->
-                <div class="grid grid-cols-3 gap-4 w-full sm:w-auto">
-                  <div class="flex flex-col items-start sm:items-center">
-                    <div class="text-sm text-gray-500">m²</div>
-                    <div class="text-md font-semibold text-gray-900">{{ project.area || '-' }}</div>
-                  </div>
-                  <div class="flex flex-col items-start sm:items-center">
-                    <div class="text-sm text-gray-500">Floors</div>
-                    <div class="text-md font-semibold text-gray-900">{{ project.floors || '-' }}</div>
-                  </div>
-                  <div class="flex flex-col items-start sm:items-center">
-                    <div class="text-sm text-gray-500">Units</div>
-                    <div class="text-md font-semibold text-gray-900">{{ project.units || '-' }}</div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
           </main>
 
           <!-- aside -->
           <aside class="lg:col-span-4" data-aos="fade-left" data-aos-delay="150">
             <div class="sticky top-24 space-y-6">
+              
+              <!-- project description card -->
               <article class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
                 <h2 class="text-xl md:text-2xl font-bold text-gray-900">{{ project.title }}</h2>
                 <p class="text-sm text-gray-500 mt-1">{{ project.location }}</p>
                 <p class="text-base text-gray-700 leading-relaxed mt-4">{{ project.description }}</p>
               </article>
+
+              <div class="w-full bg-white border rounded-2xl p-4 sm:p-6 text-gray-700 shadow-lg" data-aos="fade-up-right" data-aos-delay="150">
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                  
+                  <!-- Status -->
+                  <div class="flex items-center gap-3">
+                    <div class="text-sm text-gray-500">{{ t('project.status','Status') }}</div>
+                    <div
+                      :class="`inline-flex items-center gap-2 px-3 py-1.5 text-sm rounded-full border font-medium ${statusStyle(project.status)}`"
+                      :aria-label="`Project status: ${project.status}`"
+                      role="status">
+                      <span>{{ project.status }}</span>
+                    </div>
+                  </div>
+
+                  <!-- Project metrics -->
+                  <div class="grid grid-cols-3 gap-4 w-full sm:w-auto">
+                    <div class="flex flex-col items-start sm:items-center">
+                      <div class="text-sm text-gray-500">m²</div>
+                      <div class="text-md font-semibold text-gray-900">{{ project.area || '-' }}</div>
+                    </div>
+                    <div class="flex flex-col items-start sm:items-center">
+                      <div class="text-sm text-gray-500">Floors</div>
+                      <div class="text-md font-semibold text-gray-900">{{ project.floors || '-' }}</div>
+                    </div>
+                    <div class="flex flex-col items-start sm:items-center">
+                      <div class="text-sm text-gray-500">Units</div>
+                      <div class="text-md font-semibold text-gray-900">{{ project.units || '-' }}</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
             </div>
           </aside>
+
+          
         </div>
 
         <!-- not found -->

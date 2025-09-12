@@ -1,8 +1,10 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed,onMounted } from 'vue'
 import Projects from '@/FakeData/FakeData.json'
 import { useI18n } from 'vue-i18n'
 import scrollTop from './scroll-top.vue'
+import { Icon } from '@iconify/vue'
+import AOS from 'aos'
 
 const { t } = useI18n()
 
@@ -27,6 +29,15 @@ function statusStyle(status) {
   default: return 'bg-gray-50 text-gray-700'
 }
 }
+
+onMounted(() => {
+  AOS.init({
+    duration: 800,
+    once: true,
+    easing: "ease-in-out"
+  });
+});
+
 </script>
 
 <template>
@@ -38,12 +49,12 @@ function statusStyle(status) {
           :key="project.id"
           class="group relative rounded-2xl overflow-hidden shadow-2xl transform transition duration-700 hover:scale-[1.02] 
           hover:shadow-[0_30px_80px_rgba(2,6,23,0.7)] bg-slate-50"
-          aria-labelledby="`project-${project.id}-title`" data-aos="fade-up" data-aos-delay="150"
+          aria-labelledby="`project-${project.id}-title`" data-aos="fade-up"
         >
           <!-- Image / Visual -->
           <div class="relative w-full aspect-[4/4] bg-gray-100">
             <img
-              :src="project.image"
+              :src="Array.isArray(project.image) ? project.image[0] : project.image"
               :alt="project.title"
               loading="lazy"
               class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
@@ -80,9 +91,7 @@ function statusStyle(status) {
                 aria-label="View project details"
               >
                 {{ t('projects.viewDetails') }}
-                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
+                <Icon icon="mdi:arrow-right" class="w-4 h-4" />
               </router-link>
             </div>
           </div>

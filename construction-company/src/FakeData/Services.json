@@ -4,45 +4,45 @@
       "key" : "residential",
       "icon": "mdi:home-city-outline", 
       "images": [
-      "/images/residential.jpeg",
-      "/images/residential 2.jpeg",
-      "/images/residential 3.jpeg"
+      "/images/residential5.webp",
+      "/images/residential3.webp",
+      "/images/residential2.webp"
     ]
     },
     {
       "key" : "office",
       "icon": "mdi:office-building-outline", 
       "images": [
-      "/images/office.jpeg",
-      "/images/office 2.jpeg",
-      "/images/office 3.jpeg"
+      "/images/office.webp",
+      "/images/office2.webp",
+      "/images/office3.webp"
     ]
     },
     {
       "key" : "urbanRenewal",
       "icon": "mdi:home-modern", 
       "images": [
-      "/images/restoration.jpeg",
-      "/images/restoration 2.jpeg",
-      "/images/restoration 3.jpeg"
+      "/images/restoration.webp",
+      "/images/restoration2.webp",
+      "/images/restoration3.webp"
     ]
     },
     {
       "key" : "industrialBuildings",
       "icon": "mdi:factory-outline", 
       "images": [
-      "/images/industrialBuildings2.png",
-      "/images/industrialBuilding.jpeg",
-      "/images/industrialBuildings3.png"
+      "/images/industrialBuildings2.webp",
+      "/images/industrialBuilding.webp",
+      "/images/industrialBuildings3.webp"
     ]
     },
     {
       "key" : "architecturalDesign",
       "icon": "mdi:architecture-outline", 
       "images": [
-      "/images/architecturalDesign.jpeg",
-      "/images/architecturalDesign 2.jpeg",
-      "/images/architecturalDesign.png"
+      "/images/architecturalDesign.webp",
+      "/images/architecturalDesign2.webp",
+      "/images/architecturalDesign3.webp"
     ]
     }
   ]

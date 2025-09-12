@@ -1,6 +1,7 @@
 <script setup>
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
+import { Icon } from '@iconify/vue'
 
 const router = useRouter()
 const { t } = useI18n()
@@ -17,11 +18,7 @@ function goHome() {
     <div class="flex flex-col items-center gap-6 max-w-xl">
       <div class="flex items-center gap-3">
         <div class="rounded-full bg-red-600/20 p-4">
-          <svg class="w-10 h-10 text-red-500" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M11.001 14h2v2h-2z" fill="currentColor"/>
-            <path d="M11 6h2v6h-2z" fill="currentColor"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12zm10-8C7.588 4 4 7.588 4 12s3.588 8 8 8 8-3.588 8-8-3.588-8-8-8z" fill="currentColor"/>
-          </svg>
+          <Icon icon="mdi:alert-circle-outline" class="w-8 h-8 text-red-600" />
         </div>
         <h1 class="text-6xl md:text-7xl font-extrabold tracking-tight text-white">404</h1>
       </div>
