@@ -1,19 +1,3 @@
-<template>
-  <!-- CTA -->
-  <section 
-    class="bg-yellow-600 text-white py-20 text-center px-5" 
-    ref="ctaSection">
-    <h2 class="text-2xl mb-6 fade-up leading-relaxed" v-html="t('cta.title')"></h2>
-    
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto mt-12">
-      <div v-for="counter in counters" :key="counter.key">
-        <h3 class="text-5xl font-extrabold">{{ counter.value }}</h3>
-        <p class="text-lg mt-2">{{ t(counter.label) }}</p>
-      </div>
-    </div>
-  </section>
-</template>
-
 <script setup>
 import { ref, reactive, onMounted, onBeforeUnmount } from "vue"
 import { useI18n } from 'vue-i18n'
@@ -70,3 +54,20 @@ onBeforeUnmount(() => {
   }
 });
 </script>
+
+<template>
+  <!-- CTA -->
+  <section 
+    class="bg-yellow-600 text-white py-20 text-center px-5" 
+    ref="ctaSection">
+    <h2 class="text-2xl mb-6 fade-up leading-relaxed" v-html="t('cta.title')"></h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto mt-12">
+      <div v-for="counter in counters" :key="counter.key">
+        <h3 class="text-5xl font-extrabold">{{ counter.value }}</h3>
+        <p class="text-lg mt-2">{{ t(counter.label) }}</p>
+      </div>
+    </div>
+  </section>
+</template>
+

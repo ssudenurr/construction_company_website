@@ -1,3 +1,10 @@
+
+<script setup>
+import { useI18n } from "vue-i18n";
+import { Icon } from "@iconify/vue";
+const { t } = useI18n();
+</script>
+
 <template>
     <!-- contact -->
     <section id="contact" class="py-24 bg-gray-50">
@@ -60,9 +67,3 @@
         </div>
     </section>
 </template>
-
-<script setup>
-import { useI18n } from "vue-i18n";
-import { Icon } from "@iconify/vue";
-const { t } = useI18n();
-</script>

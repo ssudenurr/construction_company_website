@@ -2,7 +2,6 @@
 import { ref, onMounted, onBeforeUnmount } from "vue"
 import { useI18n } from 'vue-i18n'
 import { Icon } from '@iconify/vue'
-import AOS from 'aos'
 import servicesData from '../FakeData/Services.json'
 
 const services = ref(servicesData.services || [])
@@ -23,7 +22,6 @@ onMounted(() => {
     }, intervalTime)
     intervals.push(intv)
   })
-  AOS.init({ duration: 1000, once: true, easing: "ease-in-out" })
 })
 
 onBeforeUnmount(() => {

@@ -10,14 +10,14 @@
     <OurServices />
     <Projects />
     <Cta />
-    <Contact />
-    <Footer />
+    <Footer v-if="showFooter" />
+    <Contact v-if="showContact" />
     <scrollTop />
   </div>
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 import Header from '../components/Header-section.vue'
 import Hero from '../components/Hero-section.vue'
 import Cta from '@/components/Cta-section.vue'; 
@@ -28,13 +28,19 @@ import OurServices from '@/components/Our-services.vue';
 import AboutUs from '@/components/About-us.vue';
 import scrollTop from '@/components/scroll-top.vue';
 
+import 'aos/dist/aos.css'; 
 import Aos from 'aos';
-import 'aos/dist/aos.css';
+
 const heroImg = '/images/construction2.webp';
 
 
-onMounted(() => {
-  Aos.init();
-});
+const showFooter = ref(false);
+const showContact = ref(false);
 
+onMounted(() => {
+  setTimeout(() => Aos.init({ duration: 1000 }), 0); 
+
+  showContact.value = true;
+  showFooter.value = true;
+});
 </script>

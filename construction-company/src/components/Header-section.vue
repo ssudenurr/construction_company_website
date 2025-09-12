@@ -1,4 +1,4 @@
-5<script setup>
+<script setup>
 import { ref, computed, watchEffect } from "vue"
 import { useI18n } from 'vue-i18n'
 import { Icon } from '@iconify/vue'
@@ -147,7 +147,7 @@ const toggleProjectMobile = () => {
       <!-- Logo -->
       <div class="flex justify-center md:justify-center flex-1">
         <a href="/" aria-label="Home">
-          <img src="/logo/ironcladLogo4.png" alt="Logo" class="w-40 h-auto md:w-42" />
+          <img src="/logo/ironcladLogo4.webp" alt="Logo" class="w-40 h-auto md:w-42" />
         </a>
       </div>
 
