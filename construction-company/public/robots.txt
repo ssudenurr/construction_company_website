@@ -1,0 +1,12 @@
+# robots.txt
+# allow all bots
+User-agent: *
+Allow: /
+
+# Block sensitive folders
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+
+# Site map 
+Sitemap: https://www.sitenizinadi.com/sitemap.xml
