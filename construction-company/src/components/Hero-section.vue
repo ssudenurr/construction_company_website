@@ -31,11 +31,12 @@ useSeo(seoData.home.hero);
       <div class="mt-6 flex justify-end gap-4 flex-wrap">
         <a
           href="#contact"
-          class="bg-yellow-500 px-6 py-3 rounded-full text-lg font-semibold shadow-lg 
-          hover:bg-yellow-400 transition-transform transform hover:scale-110 flex items-center gap-2">
+          class="bg-yellow-600 px-6 py-3 rounded-full text-lg font-bold text-white shadow-lg
+                hover:bg-yellow-500 transition-transform transform hover:scale-110 flex items-center gap-2">
           {{ t('hero.freeDiscoveryRequest') }}
           <Icon icon="mdi:arrow-right" class="w-6 h-6" />
         </a>
+
       </div>
       
     </div>

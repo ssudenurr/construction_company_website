@@ -137,14 +137,15 @@ function endDrag() {
 
         <!-- Navigation dots -->
         <div class="flex justify-center gap-2 mt-6">
-          <button
-            v-for="(_, idx) in totalPages"
-            :key="idx"
-            @click="goToSlide(idx)"
-            :class="[ 'w-3 h-3 rounded-full transition',
-              projectIndex === idx ? 'bg-yellow-500' : 'bg-gray-300 hover:bg-yellow-400'
-            ]">
-          </button>
+        <button
+          v-for="(_, idx) in totalPages"
+          :key="idx"
+          @click="goToSlide(idx)"
+          class="w-3 h-3 rounded-full transition bg-gray-300 hover:bg-yellow-400 relative"
+        >
+          <span class="sr-only">Go to slide {{ idx + 1 }}</span>
+        </button>
+
         </div>
       </div>
     </div>

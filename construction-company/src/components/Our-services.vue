@@ -69,7 +69,7 @@ onBeforeUnmount(() => {
               :key="i"
               class="flex-shrink-0 w-full h-full relative"
             >
-              <img :src="img" class="w-full h-full object-cover transform transition duration-700" />
+              <img :src="img" class="w-full h-full object-cover transform transition duration-700" alt="service image" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
             </div>
           </div>
