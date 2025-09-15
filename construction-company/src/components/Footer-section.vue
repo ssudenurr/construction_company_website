@@ -2,6 +2,10 @@
 import { useI18n } from 'vue-i18n'
 import { Icon } from '@iconify/vue'
 import { computed, watchEffect } from 'vue'
+import { useSeo } from "@/composables/useSeo"
+import seoData from '../Datas/seoData.js'
+
+useSeo(seoData.home.footer);
 const { t, locale } = useI18n()
 
 const savedLang = localStorage.getItem('lang') || 'en'

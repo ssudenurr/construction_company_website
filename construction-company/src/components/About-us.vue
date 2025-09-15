@@ -1,7 +1,11 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
-const { t } = useI18n();
+import { useSeo } from "@/composables/useSeo"
+import seoData from '../Datas/seoData.js'
 
+useSeo(seoData.home.aboutUs);
+
+const { t } = useI18n();
 </script>
 <template>
   <section class="relative bg-white py-20" id="aboutUs">

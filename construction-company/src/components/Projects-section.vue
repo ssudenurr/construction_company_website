@@ -1,8 +1,11 @@
 <script setup>
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import { useI18n } from 'vue-i18n'
-import projectsData from '../FakeData/FakeData.json'
+import projectsData from '../Datas/FakeData.json'
+import { useSeo } from "@/composables/useSeo"
+import seoData from '../Datas/seoData.js'
 
+useSeo(seoData.home.projects);
 const { t } = useI18n()
 const projects = ref(projectsData.projects.filter(p => p.status === 'completed') || [])
 

@@ -1,6 +1,10 @@
 <script setup>
 import { ref, reactive, onMounted, onBeforeUnmount } from "vue"
 import { useI18n } from 'vue-i18n'
+import { useSeo } from "@/composables/useSeo"
+import seoData from '../Datas/seoData.js'
+
+useSeo(seoData.home.cta);
 const { t } = useI18n()
 
 // Dynamic meter data

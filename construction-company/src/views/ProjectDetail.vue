@@ -2,7 +2,7 @@
 import { ref, computed, onMounted } from 'vue'
 import { useRoute} from 'vue-router'
 import { useI18n } from 'vue-i18n'
-import Projects from '@/FakeData/FakeData.json'
+import Projects from '@/Datas/FakeData.json'
 import HeaderSection from '@/components/Header-section.vue'
 import FooterSection from '@/components/Footer-section.vue'
 import Aos from 'aos'

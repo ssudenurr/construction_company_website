@@ -1,7 +1,12 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 import { Icon } from '@iconify/vue';
+import { useSeo } from "@/composables/useSeo"
+import seoData from '../Datas/seoData.js'
+
 const { t } = useI18n();
+useSeo(seoData.home.hero);
+
 </script>
 
 <template>

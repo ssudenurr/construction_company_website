@@ -2,7 +2,12 @@
 <script setup>
 import { useI18n } from "vue-i18n";
 import { Icon } from "@iconify/vue";
+import { useSeo } from "@/composables/useSeo"
+import seoData from '../Datas/seoData.js'
+
+useSeo(seoData.home.contact)
 const { t } = useI18n();
+
 </script>
 
 <template>

@@ -1,11 +1,14 @@
 <script setup>
 import { ref, computed,onMounted } from 'vue'
-import Projects from '@/FakeData/FakeData.json'
+import Projects from '@/Datas/FakeData.json'
 import { useI18n } from 'vue-i18n'
 import scrollTop from './scroll-top.vue'
 import { Icon } from '@iconify/vue'
 import AOS from 'aos'
+import { useSeo } from "@/composables/useSeo"
+import seoData from '../Datas/seoData.js'
 
+useSeo(seoData.projectDetail.byId);
 const { t } = useI18n()
 
 const props = defineProps({

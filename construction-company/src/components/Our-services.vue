@@ -2,8 +2,11 @@
 import { ref, onMounted, onBeforeUnmount } from "vue"
 import { useI18n } from 'vue-i18n'
 import { Icon } from '@iconify/vue'
-import servicesData from '../FakeData/Services.json'
+import servicesData from '../Datas/Services.json'
+import { useSeo } from "@/composables/useSeo"
+import seoData from '../Datas/seoData.js'
 
+useSeo(seoData.home.services);
 const services = ref(servicesData.services || [])
 const { t } = useI18n();
 
