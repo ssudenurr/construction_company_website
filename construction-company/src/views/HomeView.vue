@@ -1,17 +1,17 @@
 <template>
   <div class="">
 
-  <div class="h-screen bg-cover bg-center"
-  :style="{ backgroundImage: `url(${heroImg})` }" >
-    <Header class="bg-black/50" />
-    <Hero />
-  </div>
+    <div class="h-screen w-full aspect-[16/9] bg-black/50 bg-cover bg-center" 
+        :style="{ backgroundImage: `url(${heroImg})` }">
+      <Header />
+      <Hero/>
+    </div>
     <AboutUs />
     <OurServices />
     <Projects />
     <Cta />
-    <Footer v-if="showFooter" />
     <Contact v-if="showContact" />
+    <Footer v-if="showFooter" />
     <scrollTop />
   </div>
 </template>

@@ -105,7 +105,7 @@ const toggleProjectMobile = () => {
 
 <template>
   <!-- HEADER -->
-  <header class="top-0 left-0 w-full z-50 ">
+  <header class="top-0 left-0 w-full z-50 bg-black/50 ">
     <div class="max-w-8xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-2">
       <!-- Left Side-->
       <nav class="hidden xl:flex space-x-4 ml-10 text-md font-semibold text-white justify-start">
@@ -147,7 +147,7 @@ const toggleProjectMobile = () => {
       <!-- Logo -->
       <div class="flex justify-center md:justify-center flex-1">
         <a href="/" aria-label="Home">
-          <img src="/logo/ironcladLogo4.webp" alt="Logo" class="w-40 h-auto md:w-42" />
+          <img src="/logo/ironcladLogo4.webp" alt="Logo" class="w-40 aspect-[160/105] md:w-40" />
         </a>
       </div>
 
@@ -185,7 +185,8 @@ const toggleProjectMobile = () => {
     <!-- Hamburger Button (mobile) -->
     <button 
       @click="isMenuOpen = !isMenuOpen" 
-      class="xl:hidden absolute top-10 right-5 text-white z-50 text-2xl focus:outline-none">
+      class="xl:hidden absolute top-10 right-5 text-white z-50 text-2xl focus:outline-none"
+      aria-label="Mobile Menu Button">
       <Icon :icon="isMenuOpen ? 'mdi:close' : 'mdi:menu'" class="w-11 h-11" />
     </button>
 

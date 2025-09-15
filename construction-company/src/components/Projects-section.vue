@@ -105,13 +105,16 @@ function endDrag() {
             <div
               class="bg-white rounded-3xl shadow-lg overflow-hidden relative group/card">
               
-              <!-- Project image -->
-              <img
-                :src="project.image"
-                class="w-full h-[28rem] md:h-[34rem] object-cover"
-                :alt="t('projects.imageAlt', { title: project.title })"
-                @click.stop="toggleOverlay(project.id)" 
-              />
+<!-- Project image -->
+<div v-if="project.image.length > 0">
+  <img
+    :src="project.image[0]"
+    class="w-full h-[28rem] md:h-[34rem] object-cover"
+    :alt="t('projects.imageAlt', { title: project.title })"
+    @click.stop="toggleOverlay(project.id)" 
+  />
+</div>
+
 
               <!-- Overlay -->
               <div

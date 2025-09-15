@@ -10,7 +10,7 @@
       "area": "85-200 m²",
       "units": 20,
       "floors": 3,
-      "image": "/images/home4.webp"
+      "image": ["/images/home4.webp"]
     },
     {
       "id": 2,
@@ -38,7 +38,7 @@
       "area": "75-180 m²",
       "units": 8,
       "floors": 2,
-      "image": "/images/restoration2.webp"
+      "image": ["/images/restoration2.webp"]
     },
     {
       "id": 4,
@@ -50,7 +50,7 @@
       "area": "500-2000 m²",
       "units": 20,
       "floors": 2,
-      "image": "/images/industrialBuilding.webp"
+      "image": ["/images/industrialBuilding.webp"]
     },
     {
       "id": 5,
@@ -77,7 +77,7 @@
       "area": "60-300 m²",
       "units": 60,
       "floors": 12,
-      "image": "/images/office4.webp"
+      "image": ["/images/office4.webp"]
     },
     {
       "id": 7,
@@ -89,7 +89,7 @@
       "area": "80-190 m²",
       "units": 10,
       "floors": 2,
-      "image": "/images/urbanRenewal.webp"
+      "image": ["/images/urbanRenewal.webp"]
     },
     {
       "id": 8,
@@ -101,7 +101,7 @@
       "area": "400-1500 m²",
       "units": 15,
       "floors": 2,
-      "image": "/images/industrialBuildings2.webp"
+      "image": ["/images/industrialBuildings2.webp"]
     },
     {
       "id": 9,
